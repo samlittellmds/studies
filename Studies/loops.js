@@ -50,6 +50,16 @@ for (var i = arr.length - 1; i >= 0; i--) {
 // 2 
 // 1
 
+// Another way to think of a for loop is:
+/*
+for (start; stop: update) { // code to run }
+
+Defined as such:
+1.) start: define a counting variable
+2.) stop: define a condition that when false will stop the loop
+3.) update: defines how to increment or decrement the counting variable
+*/
+
 // 2. While Loop // 
 
 // The following while loop iterates as long as n is less than 3:

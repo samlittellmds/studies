@@ -10,7 +10,9 @@
  * the default return value is undefined. The parameters of a function call are the function's arguments. Arguments may be passed by value (in the case of primitive values) 
  * or by reference (in the case of objects). This means that if a function reassigns a primitive type parameter, the value won't change outside the function. In the case of 
  * an object type parameter, if its properties are mutated, the change will impact outside of the function.
- * 2. Their are two parts of a functions syntax: the function statement, and the function expression (although there are several ways to define functions). 
+ * 2. There are two parts of a functions syntax: the declaration (function statement) and the call. The declaration defines a function with the specified parameters,
+ * while the call provides the function with a given value and argument(s). The code inside a function is not executed when the function is defined, the code inside a function 
+ * is executed when the function is called or "invoked". 
  * 3. Declared functions can also be assigned to a variable.
  * 4. Functions can take in inputs with their assigned parameters and return a value. The function can be invoked with arguments which then get passed through the function
  * per parameter(s).

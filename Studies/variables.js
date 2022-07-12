@@ -99,3 +99,34 @@ const p = new Rectangle(); // Throws a ReferenceError
 class Rectangle {}
 
 // This occurs because while the class is hoisted its values are not initialized.
+
+// let and const behave differently than var with BLOCK SCOPE //
+// The let and const keywords provide block-scoping. The var keyword does not.
+// That means that if you declare a variable with var, then use var to declare another variable with same name 
+// inside a block scope, the original variable will be updated. If you use let or const, a new variable contained 
+// within the block scope is created.
+
+// Example below:
+
+var sandwich = 'tuna';
+let drink = 'soda';
+
+if (true) {
+
+	// drink is in the block scope, but sandwich is not
+	var sandwich = 'turkey';
+	let drink = 'water';
+
+	// logs "turkey"
+	console.log(sandwich);
+
+	// logs "water"
+	console.log(drink);
+
+}
+
+// logs "turkey"
+console.log(sandwich);
+
+// logs "soda"
+console.log(drink);
